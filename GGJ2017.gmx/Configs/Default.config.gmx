@@ -650,5 +650,10 @@
     <option_xbone_texture_page>1024</option_xbone_texture_page>
     <option_xbone_title_id>1234ABCD</option_xbone_title_id>
   </Options>
-  <ConfigConstants/>
+  <ConfigConstants>
+    <constants number="2">
+      <constant name="MIN_ONDA_SPEED">.05</constant>
+      <constant name="MAX_ONDA_SPEED">.2</constant>
+    </constants>
+  </ConfigConstants>
 </Config>

@@ -16,3 +16,6 @@ vspd = lengthdir_y(len, dir);
 //move
 x += hspd;
 y += vspd;
+
+if (l_key > 0) global.ondaSpeed = clamp(global.ondaSpeed - .01, MIN_ONDA_SPEED, MAX_ONDA_SPEED);
+if (r_key > 0) global.ondaSpeed = clamp(global.ondaSpeed + .01, MIN_ONDA_SPEED, MAX_ONDA_SPEED);
