@@ -5,9 +5,34 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\s_animal1</sprite>
+    <sprite>sprites\s_animal2</sprite>
+    <sprite>sprites\s_animal3</sprite>
+    <sprite>sprites\s_animal4</sprite>
+    <sprite>sprites\s_wall</sprite>
+    <sprite>sprites\s_button</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_move_animals.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\o_parent</object>
+    <object>objects\o_animal1</object>
+    <object>objects\o_animal2</object>
+    <object>objects\o_animal3</object>
+    <object>objects\o_animal4</object>
+    <object>objects\o_wall</object>
+    <object>objects\o_spawner</object>
+    <object>objects\o_button</object>
+    <object>objects\o_p_button</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\r_menu</room>
+    <room>rooms\r_game</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
