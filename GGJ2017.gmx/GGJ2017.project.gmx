@@ -19,7 +19,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_move_animals.gml</script>
-   <script>scripts\scr_get_movement.gml</script>
+    <script>scripts\scr_get_movement.gml</script>
     <script>scripts\scr_get_cromaControl.gml</script>
     <script>scripts\scr_movement_state.gml</script>
     <script>scripts\scr_croma_state.gml</script>
@@ -34,13 +34,13 @@
     <object>objects\o_spawner</object>
     <object>objects\o_button</object>
     <object>objects\o_p_button</object>
-<object>objects\o_player</object>
+    <object>objects\o_player</object>
     <object>objects\o_croma</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>
     <room>rooms\r_game</room>
-<room>rooms\r_hud</room>    
+    <room>rooms\r_hud</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
