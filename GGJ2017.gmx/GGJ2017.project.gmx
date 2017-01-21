@@ -12,6 +12,8 @@
     <sprite>sprites\s_animal4</sprite>
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_button</sprite>
+    <sprite>sprites\s_player</sprite>
+    <sprite>sprites\s_croma</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -32,6 +34,17 @@
   <rooms name="rooms">
     <room>rooms\r_menu</room>
     <room>rooms\r_game</room>
+    <script>scripts\scr_get_movement.gml</script>
+    <script>scripts\scr_get_cromaControl.gml</script>
+    <script>scripts\scr_movement_state.gml</script>
+    <script>scripts\scr_croma_state.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\o_player</object>
+    <object>objects\o_croma</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\r_hud</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
