@@ -6,10 +6,14 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\s_animal1</sprite>
-    <sprite>sprites\s_animal2</sprite>
-    <sprite>sprites\s_animal3</sprite>
-    <sprite>sprites\s_animal4</sprite>
+    <sprite>sprites\s_deer</sprite>
+    <sprite>sprites\s_boto</sprite>
+    <sprite>sprites\s_bun</sprite>
+    <sprite>sprites\s_boto2</sprite>
+    <sprite>sprites\s_otter</sprite>
+    <sprite>sprites\s_tucano</sprite>
+    <sprite>sprites\s_guara</sprite>
+    <sprite>sprites\s_puma</sprite>
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_button</sprite>
     <sprite>sprites\s_player</sprite>
@@ -19,33 +23,35 @@
     <sprite>sprites\s_freqArrow</sprite>
     <sprites name="fror">
       <sprite>sprites\circulo</sprite>
-      <sprite>sprites\s_ponteira</sprite>
-      <sprite>sprites\s_ponteira_p1</sprite>
-      <sprite>sprites\s_ponteira_p2</sprite>
-      <sprite>sprites\s_ponteira_p3</sprite>
-      <sprite>sprites\s_ponteira_p4</sprite>
-      <sprite>sprites\s_ponteira_p5</sprite>
-      <sprite>sprites\s_ponteira_p6</sprite>
-      <sprite>sprites\s_ponteira_p7</sprite>
-      <sprite>sprites\s_ponteira_p8</sprite>
-      <sprite>sprites\s_ponteira_parado</sprite>
+      <sprite>sprites\s_ponteira_ani</sprite>
+      <sprite>sprites\s_seta</sprite>
     </sprites>
     <sprite>sprites\s_back1</sprite>
     <sprite>sprites\s_back2</sprite>
     <sprite>sprites\s_cursor</sprite>
     <sprite>sprites\s_barrinha</sprite>
+    <sprite>sprites\s_snek</sprite>
   </sprites>
-  <backgrounds name="background"/>
-  <paths name="paths"/>
+  <backgrounds name="background">
+    <background>background\b1</background>
+    <background>background\b2</background>
+  </backgrounds>
+  <paths name="paths">
+    <path>paths\path0</path>
+    <path>paths\path1</path>
+    <path>paths\path2</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\scr_move_animals.gml</script>
     <script>scripts\scr_get_movement.gml</script>
-    <script>scripts\scr_get_cromaControl.gml</script>
     <script>scripts\scr_movement_state.gml</script>
+    <script>scripts\scr_get_cromaControl.gml</script>
     <script>scripts\scr_croma_state.gml</script>
+    <script>scripts\scr_get_croma.gml</script>
     <script>scripts\scr_patrol.gml</script>
     <script>scripts\scr_angle.gml</script>
     <script>scripts\scr_ripple.gml</script>
+    <script>scripts\scr_botos.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font</font>
@@ -59,33 +65,32 @@
     <object>objects\o_p_button</object>
     <object>objects\o_player</object>
     <object>objects\o_croma</object>
+    <object>objects\o_onda</object>
     <object>objects\o_aura</object>
     <object>objects\o_game</object>
     <object>objects\o_hud</object>
     <object>objects\o_start_button</object>
     <object>objects\o_quit_button</object>
+    <object>objects\o_barra</object>
     <object>objects\o_score</object>
     <objects name="animais">
       <object>objects\o_spawner_animais</object>
-      <object>objects\o_animal1</object>
-      <object>objects\o_animal2</object>
-      <object>objects\o_animal3</object>
-      <object>objects\o_animal4</object>
+      <object>objects\o_deer</object>
+      <object>objects\o_otter</object>
+      <object>objects\o_bun</object>
+      <object>objects\o_tucano</object>
+      <object>objects\o_puma</object>
+      <object>objects\o_snek</object>
+      <object>objects\o_guara</object>
+      <object>objects\o_boto</object>
+      <object>objects\o_boto_chapel</object>
+      <object>objects\o_back</object>
     </objects>
     <objects name="ponteira">
       <object>objects\o_circulo</object>
-      <object>objects\o_ponteira</object>
-      <object>objects\o_ponteira_p1</object>
-      <object>objects\o_ponteira_p2</object>
-      <object>objects\o_ponteira_p3</object>
-      <object>objects\o_ponteira_p4</object>
-      <object>objects\o_ponteira_p5</object>
-      <object>objects\o_ponteira_p6</object>
-      <object>objects\o_ponteira_p7</object>
-      <object>objects\o_ponteira_p8</object>
+      <object>objects\o_croma</object>
+      <object>objects\s_pont</object>
     </objects>
-    <object>objects\o_barra</object>
-    <object>objects\o_onda</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_game</room>
