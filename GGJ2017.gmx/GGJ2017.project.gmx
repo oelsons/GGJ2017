@@ -79,6 +79,7 @@
       <object>objects\o_guara</object>
       <object>objects\o_boto</object>
       <object>objects\o_boto_chapel</object>
+      <object>objects\o_parent</object>
       <object>objects\o_back</object>
     </objects>
     <objects name="ponteira">
