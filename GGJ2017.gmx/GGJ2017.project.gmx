@@ -30,6 +30,10 @@
       <sprite>sprites\s_ponteira_p8</sprite>
       <sprite>sprites\s_ponteira_parado</sprite>
     </sprites>
+    <sprite>sprites\s_back1</sprite>
+    <sprite>sprites\s_back2</sprite>
+    <sprite>sprites\s_cursor</sprite>
+    <sprite>sprites\s_barrinha</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -83,6 +87,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\r_hud</room>
+    <room>rooms\r_menu</room>
+    <room>rooms\r_game</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
