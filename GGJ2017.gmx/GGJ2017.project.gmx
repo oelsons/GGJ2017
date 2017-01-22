@@ -50,6 +50,7 @@
     <script>scripts\scr_get_croma.gml</script>
     <script>scripts\scr_patrol.gml</script>
     <script>scripts\scr_angle.gml</script>
+    <script>scripts\scr_ripple.gml</script>
     <script>scripts\scr_botos.gml</script>
     <script>scripts\script9.gml</script>
   </scripts>
@@ -63,12 +64,14 @@
     <object>objects\o_b_score</object>
     <object>objects\o_p_button</object>
     <object>objects\o_player</object>
+    <object>objects\o_croma</object>
     <object>objects\o_onda</object>
     <object>objects\o_aura</object>
     <object>objects\o_game</object>
     <object>objects\o_hud</object>
     <object>objects\o_start_button</object>
     <object>objects\o_quit_button</object>
+    <object>objects\o_barra</object>
     <object>objects\o_score</object>
     <objects name="animais">
       <object>objects\o_spawner_animais</object>
@@ -81,19 +84,22 @@
       <object>objects\o_guara</object>
       <object>objects\o_boto</object>
       <object>objects\o_boto_chapel</object>
+<<<<<<< HEAD
       <object>objects\o_parent</object>
+=======
+      <object>objects\o_back</object>
+>>>>>>> origin/master
     </objects>
     <objects name="ponteira">
       <object>objects\o_circulo</object>
       <object>objects\o_croma</object>
       <object>objects\s_pont</object>
     </objects>
-    <object>objects\o_back</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\r_menu</room>
     <room>rooms\r_game</room>
     <room>rooms\r_hud</room>
+    <room>rooms\r_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
