@@ -37,7 +37,6 @@ lyaxix = 0;
 scr_get_movement();
 state = scr_movement_state;
 
-//onda = instance_create(x,y,o_onda);
 onda = instance_create(x,y,o_onda);
 </string>
           </argument>

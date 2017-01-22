@@ -12,4 +12,4 @@ if (angulo >= 225 and angulo < 270){image_index = 6}
 if (angulo >= 270 and angulo < 315){ image_index = 7}
 if (angulo >= 315){ image_index = 8}
 
-show_debug_message(angulo);
+show_debug_message(string(x) + " " + string(y) +" " +string(angulo));

@@ -52,6 +52,7 @@
     <script>scripts\scr_angle.gml</script>
     <script>scripts\scr_ripple.gml</script>
     <script>scripts\scr_botos.gml</script>
+    <script>scripts\scr_positionHud.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font</font>
@@ -60,17 +61,11 @@
     <object>objects\o_parent</object>
     <object>objects\o_wall</object>
     <object>objects\o_spawner_flores</object>
-    <object>objects\o_button</object>
-    <object>objects\o_b_score</object>
     <object>objects\o_p_button</object>
     <object>objects\o_player</object>
-    <object>objects\o_croma</object>
     <object>objects\o_onda</object>
-    <object>objects\o_aura</object>
     <object>objects\o_game</object>
-    <object>objects\o_hud</object>
-    <object>objects\o_start_button</object>
-    <object>objects\o_quit_button</object>
+    <object>objects\o_healthbar</object>
     <object>objects\o_barra</object>
     <object>objects\o_score</object>
     <objects name="animais">
@@ -90,6 +85,12 @@
       <object>objects\o_circulo</object>
       <object>objects\o_croma</object>
       <object>objects\s_pont</object>
+    </objects>
+    <objects name="menu">
+      <object>objects\o_b_score</object>
+      <object>objects\o_button</object>
+      <object>objects\o_quit_button</object>
+      <object>objects\o_start_button</object>
     </objects>
   </objects>
   <rooms name="rooms">

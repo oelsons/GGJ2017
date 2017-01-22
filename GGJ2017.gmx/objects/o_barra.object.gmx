@@ -27,10 +27,10 @@
             <kind>1</kind>
             <string>var percent = ((global.ondaSpeed-MIN_ONDA_SPEED) / (MAX_ONDA_SPEED-MIN_ONDA_SPEED)) * 100
 
-draw_sprite(s_barrinha, 1, view_wview[0]/2, view_hview[0]*.8);
-draw_sprite(s_cursor, 1, (view_wview[0]/2)-(100) + 2*percent, view_hview[0]*.8);
+draw_sprite_ext(s_barrinha, 1, view_xview[0] + view_wview[0]/2, view_yview[0] + view_hview[0] - 50, .8, .8, 0, c_white, 1);
+draw_sprite_ext(s_cursor, 1, view_xview[0] + (view_wview[0]/2)-(100) + 2*percent, view_yview[0] + view_hview[0] - 50, .8, .8, 0, c_white, 1);
 
-//show_debug_message("&gt;&gt;"+string(percent));
+//show_debug_message("&gt;&gt;"+string(view_xview[0])+ " "+ string(view_yview[0]) + " " +string(view_wview[0])+ " "+ string(view_hview[0]));
 </string>
           </argument>
         </arguments>
