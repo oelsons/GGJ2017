@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>global.ondaSpeed = .1;
 global.rxaxix = 0;
-global.color = c_blue;
+global.color = make_colour_rgb(0,255,0);
 </string>
           </argument>
         </arguments>

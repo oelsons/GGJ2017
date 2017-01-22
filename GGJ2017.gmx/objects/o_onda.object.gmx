@@ -73,8 +73,12 @@ radius = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_colour(global.color);
-draw_circle(x,y,radius,true);
+            <string>if(global.color)
+{
+    draw_set_colour(global.color);
+    draw_circle(x,y,radius,true);
+    draw_circle(x,y,radius-10,true);
+}
 </string>
           </argument>
         </arguments>

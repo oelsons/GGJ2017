@@ -18,7 +18,6 @@
     <sprite>sprites\s_button</sprite>
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_croma</sprite>
-    <sprite>sprites\s_onda</sprite>
     <sprite>sprites\s_freqBar</sprite>
     <sprite>sprites\s_freqArrow</sprite>
     <sprites name="fror">
@@ -58,13 +57,14 @@
     <font>fonts\font</font>
   </fonts>
   <objects name="objects">
+    <object>objects\o_game</object>
     <object>objects\o_parent</object>
+    <object>objects\o_player</object>
     <object>objects\o_wall</object>
     <object>objects\o_spawner_flores</object>
     <object>objects\o_p_button</object>
-    <object>objects\o_player</object>
     <object>objects\o_onda</object>
-    <object>objects\o_game</object>
+    <object>objects\o_onda_animal</object>
     <object>objects\o_healthbar</object>
     <object>objects\o_barra</object>
     <object>objects\o_score</object>

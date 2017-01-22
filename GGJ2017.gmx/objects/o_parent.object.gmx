@@ -26,15 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>/// create
-armor = 1;
+armor = 10;
 //destroy
-if (y &gt; room_height+16)
-{instance_destroy();
+onda = instance_create(x,y,o_onda_animal);
+if (y &gt; room_height+16 or x &gt; room_width-16)
+{
+    armor = 0;
 }
-if (x &gt; room_width-16)
-{instance_destroy();
-}
-
 </string>
           </argument>
         </arguments>
@@ -61,19 +59,29 @@ if (x &gt; room_width-16)
 
 scr_move_animals();
 
-//die code
-if (armor &lt;=0)
+/// Move onda
+if(onda)
 {
+onda.x = x;
+onda.y = y;
+}
+
+//die code
+if (onda and armor &lt;=0)
+{
+    with(onda)
+    {
+        instance_destroy();
+    }
     instance_destroy();
-    
     score += 1;
 }
+
+//if(onda.collision_circle(x,y,onda.radius,o_player,true, true) != noone)
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="o_player">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -90,8 +98,12 @@ if (armor &lt;=0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// damage
-armor = 0;
+            <string>/// Collide
+//show_debug_message(string(color) + " " +string(global.color));  
+if(instance_exists(onda) and distance_to_object(o_player) &lt; onda.radius and onda.color == global.color)
+{
+    armor--;
+}
 </string>
           </argument>
         </arguments>
