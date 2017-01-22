@@ -83,8 +83,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\r_hud</room>
-    <room>rooms\r_game</room>
-    <room>rooms\r_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
