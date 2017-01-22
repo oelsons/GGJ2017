@@ -17,6 +17,19 @@
     <sprite>sprites\s_onda</sprite>
     <sprite>sprites\s_freqBar</sprite>
     <sprite>sprites\s_freqArrow</sprite>
+    <sprites name="fror">
+      <sprite>sprites\circulo</sprite>
+      <sprite>sprites\s_ponteira</sprite>
+      <sprite>sprites\s_ponteira_p1</sprite>
+      <sprite>sprites\s_ponteira_p2</sprite>
+      <sprite>sprites\s_ponteira_p3</sprite>
+      <sprite>sprites\s_ponteira_p4</sprite>
+      <sprite>sprites\s_ponteira_p5</sprite>
+      <sprite>sprites\s_ponteira_p6</sprite>
+      <sprite>sprites\s_ponteira_p7</sprite>
+      <sprite>sprites\s_ponteira_p8</sprite>
+      <sprite>sprites\s_ponteira_parado</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -27,6 +40,7 @@
     <script>scripts\scr_movement_state.gml</script>
     <script>scripts\scr_croma_state.gml</script>
     <script>scripts\scr_patrol.gml</script>
+    <script>scripts\scr_angle.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\o_parent</object>
@@ -44,6 +58,9 @@
     <object>objects\o_aura</object>
     <object>objects\o_game</object>
     <object>objects\o_hud</object>
+    <object>objects\o_start_button</object>
+    <object>objects\o_quit_button</object>
+    <object>objects\o_circulo</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_hud</room>

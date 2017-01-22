@@ -7,6 +7,6 @@ if (gamepad_is_connected(0)) {
     ryaxix = gamepad_axis_value(0, gp_axisrv);
     l_key = gamepad_button_check(0, gp_shoulderl);
     r_key = gamepad_button_check(0, gp_shoulderr);
-    
+
     global.rxaxix = rxaxix;
 }
