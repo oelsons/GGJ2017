@@ -26,16 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>spd = 4;
-hspd = 0;
-vspd = 0;
-len = 0;
-dir = 0;
-rxaxix = 0;
-ryaxix = 0;
-scr_get_cromaControl();
-state = scr_croma_state;
-
-</string>
+            hspd = 0;
+            vspd = 0;
+            len = 0;
+            dir = 0;
+            rxaxix = 0;
+            ryaxix = 0;
+            scr_get_cromaControl();
+            state = scr_croma_state;
+            </string>
           </argument>
         </arguments>
       </action>
@@ -58,10 +57,8 @@ state = scr_croma_state;
           <argument>
             <kind>1</kind>
             <string>script_execute(state);
-//script_execute(scr_patrol);
-<<<<<<< HEAD
-=======
-</string>
+            //script_execute(scr_patrol);
+            </string>
           </argument>
         </arguments>
       </action>
@@ -84,8 +81,7 @@ state = scr_croma_state;
           <argument>
             <kind>1</kind>
             <string>///funfa
->>>>>>> origin/master
-</string>
+            </string>
           </argument>
         </arguments>
       </action>
