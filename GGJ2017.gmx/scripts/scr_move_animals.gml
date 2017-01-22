@@ -3,8 +3,8 @@
 
 if(speed = 0)
 {
-toX = random(room_width);
-toY = random(room_height);
+toX = random(room_width+16);
+toY = random(room_height-16);
 move_towards_point(toX, toY, 7);
 }
 

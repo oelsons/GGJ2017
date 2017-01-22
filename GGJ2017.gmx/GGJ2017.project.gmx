@@ -40,15 +40,15 @@
     <script>scripts\scr_patrol.gml</script>
     <script>scripts\scr_angle.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font</font>
+  </fonts>
   <objects name="objects">
     <object>objects\o_parent</object>
-    <object>objects\o_animal1</object>
-    <object>objects\o_animal2</object>
-    <object>objects\o_animal3</object>
-    <object>objects\o_animal4</object>
     <object>objects\o_wall</object>
-    <object>objects\o_spawner</object>
+    <object>objects\o_spawner_flores</object>
     <object>objects\o_button</object>
+    <object>objects\o_b_score</object>
     <object>objects\o_p_button</object>
     <object>objects\o_player</object>
     <object>objects\o_croma</object>
@@ -57,7 +57,26 @@
     <object>objects\o_game</object>
     <object>objects\o_start_button</object>
     <object>objects\o_quit_button</object>
-    <object>objects\o_circulo</object>
+    <object>objects\o_score</object>
+    <objects name="animais">
+      <object>objects\o_spawner_animais</object>
+      <object>objects\o_animal1</object>
+      <object>objects\o_animal2</object>
+      <object>objects\o_animal3</object>
+      <object>objects\o_animal4</object>
+    </objects>
+    <objects name="ponteira">
+      <object>objects\o_circulo</object>
+      <object>objects\o_ponteira</object>
+      <object>objects\o_ponteira_p1</object>
+      <object>objects\o_ponteira_p2</object>
+      <object>objects\o_ponteira_p3</object>
+      <object>objects\o_ponteira_p4</object>
+      <object>objects\o_ponteira_p5</object>
+      <object>objects\o_ponteira_p6</object>
+      <object>objects\o_ponteira_p7</object>
+      <object>objects\o_ponteira_p8</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_hud</room>
