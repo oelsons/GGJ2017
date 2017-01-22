@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,9 +27,7 @@
             <kind>1</kind>
             <string>/// initialize the enemy spawner
 alarm[0] = room_speed;
-alarm[1] = room_speed*2;
-alarm[2] = room_speed*3;
-alarm[3] = room_speed*4;
+armor = 1;
 </string>
           </argument>
         </arguments>
@@ -53,26 +51,47 @@ alarm[3] = room_speed*4;
           <argument>
             <kind>1</kind>
             <string>/// Create the enemies
-var enemy = o_animal1; 
-choose(o_animal1, o_animal2, o_animal3, o_animal4);
+
+ enemy = o_bun; 
+//choose(o_animal1, o_animal2, o_animal3, o_animal4);
 var alarm_time= random_range(room_speed*.1, room_speed*.5);
+scr_botos();
 
 //increase the difficulty
 if (score &gt;= 3){
-    var enemy = choose(o_animal1, o_animal2);
-    alarm_time = random_range(room_speed*.25, room_speed*1.5);
+     enemy = choose(o_bun, o_guara);
+    alarm_time = random_range(room_speed*.5, room_speed);
     }
 
 if (score &gt;= 6){
-    var enemy = choose(o_animal1, o_animal2, o_animal3);
-    alarm_time = random_range(room_speed*.25, room_speed*1.5);
+     enemy = choose(o_bun, o_guara, choose(o_boto, o_boto_chapel));
+    alarm_time = random_range(room_speed*.5, room_speed);
+    }
+    
+if (score &gt;= 9){
+     enemy = choose(o_bun, o_guara, choose(o_boto, o_boto_chapel), o_otter);
+    alarm_time = random_range(room_speed*.5, room_speed);
     }
     
 if (score &gt;= 12){
-    var enemy = choose(o_animal1, o_animal2, o_animal3, o_animal4);
-    alarm_time = random_range(room_speed*.25, room_speed*1.5);
+     enemy = choose(o_bun, o_guara, choose(o_boto, o_boto_chapel), o_otter, o_deer);
+    alarm_time = random_range(room_speed*.5, room_speed);
     }
-    
+        
+if (score &gt;= 15){
+     enemy = choose(o_bun, o_guara, choose(o_boto, o_boto_chapel), o_otter, o_deer, o_tucano);
+    alarm_time = random_range(room_speed*.5, room_speed*1.5);
+    }
+           
+if (score &gt;= 18){
+     enemy = choose(o_bun, o_guara, choose(o_boto, o_boto_chapel), o_otter, o_deer, o_tucano, o_snek);
+    alarm_time = random_range(room_speed*.5, room_speed);
+    }   
+         
+if (score &gt;= 21){
+     enemy = choose(o_bun, o_guara, choose(o_boto, o_boto_chapel), o_otter, o_deer, o_tucano, o_snek, o_puma);
+    alarm_time = random_range(room_speed*.5, room_speed);
+    } 
  
  //crate the enemy
 spawnX = random_range(16, room_width-16);
