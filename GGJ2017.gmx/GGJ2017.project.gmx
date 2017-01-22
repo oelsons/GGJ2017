@@ -15,6 +15,8 @@
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_croma</sprite>
     <sprite>sprites\s_onda</sprite>
+    <sprite>sprites\s_freqBar</sprite>
+    <sprite>sprites\s_freqArrow</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -36,16 +38,17 @@
     <object>objects\o_spawner</object>
     <object>objects\o_button</object>
     <object>objects\o_p_button</object>
- <object>objects\o_player</object>
+    <object>objects\o_player</object>
     <object>objects\o_croma</object>
     <object>objects\o_onda</object>
     <object>objects\o_aura</object>
     <object>objects\o_game</object>
+    <object>objects\o_hud</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\r_menu</room>
-    <room>rooms\r_game</room>
     <room>rooms\r_hud</room>
+    <room>rooms\r_game</room>
+    <room>rooms\r_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

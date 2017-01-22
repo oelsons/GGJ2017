@@ -57,7 +57,7 @@ state = scr_croma_state;
           <argument>
             <kind>1</kind>
             <string>script_execute(state);
-script_execute(scr_patrol);
+//script_execute(scr_patrol);
 </string>
           </argument>
         </arguments>
