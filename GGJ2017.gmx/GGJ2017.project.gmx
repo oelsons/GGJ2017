@@ -51,12 +51,12 @@
     <script>scripts\scr_patrol.gml</script>
     <script>scripts\scr_angle.gml</script>
     <script>scripts\scr_botos.gml</script>
+    <script>scripts\script9.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font</font>
   </fonts>
   <objects name="objects">
-    <object>objects\o_parent</object>
     <object>objects\o_wall</object>
     <object>objects\o_spawner_flores</object>
     <object>objects\o_button</object>
@@ -81,6 +81,7 @@
       <object>objects\o_guara</object>
       <object>objects\o_boto</object>
       <object>objects\o_boto_chapel</object>
+      <object>objects\o_parent</object>
     </objects>
     <objects name="ponteira">
       <object>objects\o_circulo</object>
